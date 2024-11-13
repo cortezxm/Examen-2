@@ -1,0 +1,124 @@
+body {
+  margin: 0;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: aquamarine;
+  padding: 0 20px;
+  height: 50px;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bolder;
+}
+
+.menu {
+  list-style: none;
+  display: flex;
+}
+
+nav a {
+  margin-left: 20px;
+  font-size: 18px;
+  color: cornflowerblue;
+  text-decoration: none;
+}
+
+nav a:hover {
+  color: black;
+  text-decoration: none;
+}
+
+nav i {
+  color: cornflowerblue;
+  display: none !important;
+}
+
+.mobile-menu {
+  list-style: none;
+  padding: 0 20px;
+  background-color: aquamarine;
+  margin: 0;
+  display: none;
+}
+
+.mobile-menu li {
+  padding: 5px 0;
+}
+
+.main-container {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 10px;
+}
+
+.card {
+  padding: 15px;
+  margin: 5px;
+  border: 1px solid snow;
+  border-radius: 5px;
+  width: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.card.alta {
+  background-color: red;
+  color: white;
+}
+
+.card.media {
+  background-color: yellow;
+  color: black;
+}
+
+.card.baja {
+  background-color: green;
+  color: white;
+}
+
+.confirm-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.confirm-box {
+  background: white;
+  padding: 20px;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.confirm-box button {
+  margin: 5px;
+}
+
+@media (width < 460px) {
+  .menu {
+    display: none;
+  }
+
+  nav i {
+    display: block !important;
+  }
+
+  .mobile-menu-visible {
+    display: block;
+  }
+
+  .card {
+    width: 100%;
+  }
+}
